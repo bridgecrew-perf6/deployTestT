@@ -1,0 +1,292 @@
+<div class="container-fluid">
+
+  <div class="row bg-secondary d-flex align-items-center">
+    <div class="col-md-6">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 text-white">
+          <h1 class="fs-54">Olá, {{nome}}!</h1>
+          <br>
+          <h5 class="fs-18">Siga com o preenchimento do Formulário.</h5>
+
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center mt-3 mb-5">
+        <div class="col-md-6">
+          <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Prencher
+            Formulário</button>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-6 d-flex justify-content-center">
+      <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px">
+    </div>
+  </div>
+
+  <!--modal-->
+  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="novaPostagemLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="novaPostagemLabel">Preencha o Formulário</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+
+        <div class="modal-body">
+
+          <div class="form-group" action="">
+            <label for="">Área de especialização da Associação de Pacientes:</label>
+            <input type="text" [(ngModel)]="postagem.area" class="form-control">
+
+            <label for="">Razão Social:</label>
+            <textarea name="texto" [(ngModel)]="postagem.razaoSocial" id="texto" rows="3"
+              class="form-control"></textarea>
+
+            <label for="">CNPJ:</label>
+            <textarea name="texto" [(ngModel)]="postagem.cnpj" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Natureza da Pessoa Jurídica:</label>
+            <textarea name="texto" [(ngModel)]="postagem.natureza" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Endereço de correspondência e CEP:</label>
+            <textarea name="texto" [(ngModel)]="postagem.endereco" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Site:</label>
+            <textarea name="texto" [(ngModel)]="postagem.site" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Telefone:</label>
+            <textarea name="texto" [(ngModel)]="postagem.telefone" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">E-mail Institucional:</label>
+            <textarea name="texto" [(ngModel)]="postagem.email" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Data da Fundação da associação de paciente:</label>
+            <textarea name="texto" [(ngModel)]="postagem.dataFundacao" id="texto" rows="1"
+              class="form-control"></textarea>
+
+            <label for="">Dados do Atual presidente:
+              Data de encerramento do mandato da diretoria atual,
+              Nome,
+              CPF,
+              E-mail,
+              Telefone Fixo e Celular</label>
+            <textarea name="texto" [(ngModel)]="postagem.presidente" id="texto" rows="5"
+              class="form-control"></textarea>
+
+            <label for="">Destaque a missão corportativa da Associação de Pacientes:</label>
+            <textarea name="texto" [(ngModel)]="postagem.missao" id="texto" rows="2" class="form-control"></textarea>
+
+            <label for="">Dentre as prevalências da Associação de Paciente destaque as três prioritárias:</label>
+            <textarea name="texto" [(ngModel)]="postagem.prioritarias" id="texto" rows="3"
+              class="form-control"></textarea>
+
+            <label for="">Indique a ordem prioridade dos público-alvo de relacionamento da Associação de
+              Pacientes:</label>
+            <textarea name="texto" [(ngModel)]="postagem.publicoAlvo" id="texto" rows="1"
+              class="form-control"></textarea>
+
+            <label for="">Número de Profissionais contratados CLT:</label>
+            <textarea name="texto" [(ngModel)]="postagem.clt" id="texto" rows="1" class="form-control"></textarea>
+
+            <label for="">Número de voluntários:</label>
+            <textarea name="texto" [(ngModel)]="postagem.voluntarios" id="texto" rows="1"
+              class="form-control"></textarea>
+
+            <label for="">Tipo de serviço terceirizado e número de funcionários:</label>
+            <textarea name="texto" [(ngModel)]="postagem.terceirizados" id="texto" rows="4"
+              class="form-control"></textarea>
+
+            <label for="">A entidade possui conselho científico instituído:</label>
+            <textarea name="texto" [(ngModel)]="postagem.conselhoCient" id="texto" rows="1"
+              class="form-control"></textarea>
+
+            <label for="">A Associação ajuda os pacientes na realização de processo de judicialização,
+              Representantes da entidade possuem assento em algum Conselho de Saúde ou qualquer instância pública,
+              A principal liderança da entidade tem clareza sobre o propósito da entidade e seus desafios:</label>
+            <textarea name="texto" [(ngModel)]="postagem.quest1" id="texto" rows="7" class="form-control"></textarea>
+
+            <label for="">A principal liderança da entidade demonstra ter conhecimento técnico sobre a causa defendida
+              pela entidade,
+              A principal liderança da entidade demonstra ter relacionamento com diferentes públicos para articular
+              parcerias político-sociais:</label>
+            <textarea name="texto" [(ngModel)]="postagem.quest2" id="texto" rows="7" class="form-control"></textarea>
+
+            <label for="">A principal liderança apresenta um discurso pautado em parcerias e recursos de diferentes fontes (desenvolvimentista).:</label>
+            <textarea name="texto" [(ngModel)]="postagem.quest3" id="texto" rows="5" class="form-control"></textarea>
+
+            <label for="">A principal liderança defende ideias e projetos com abordagem inovadora com uso de novas tecnologias e formatos,
+              A entidade apresenta projetos estruturados com objetivo, metas e métodologia de implementação claras,
+              A entidade apresenta sistematização, avaliação e consolidação de resultados  estruturados:</label>
+            <textarea name="texto" [(ngModel)]="postagem.quest4" id="texto" rows="7" class="form-control"></textarea>
+
+            <label for="">A entidade apresenta discurso pautado em planejamento e gestão de prazos:</label>
+            <textarea name="texto" [(ngModel)]="postagem.quest5" id="texto" rows="2" class="form-control"></textarea>
+
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal"
+            (click)="publicarPostagem()">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal-->
+
+  <a (click)='findByIdUser()' class="nav-item nav-link text-secondary font-weight-bold text-center p-5  " id="nav-minhasPostagens-tab"
+    data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Click aqui para acessar seu
+    Formulário</a>
+
+  <div class="tab-pane fade container-fluid p-0 col-sm-7" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+
+    <div>
+      <div *ngFor='let item of usuario.postagem | orderBy: key: reverse'>
+        <div>
+          <div class="form-group pt-4">
+            <h2 class="text-center pb-4 text-secondary">Dados do seu formulário</h2>
+            <br>
+            <label for="comment">Área de especialização da Associação de Pacientes:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.area}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Razão Social:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.razaoSocial}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">CNPJ:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.cnpj}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Natureza da Pessoa Jurídica:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.natureza}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Endereço de correspondência e CEP:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.endereco}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Site:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.site}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Telefone:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.telefone}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">E-mail Institucional:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.email}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Data da Fundação da associação de paciente:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.dataFundacao}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Dados do Atual presidente:
+              Data de encerramento do mandato da diretoria atual,
+              Nome,
+              CPF,
+              E-mail,
+              Telefone Fixo e Celular</label>
+            <textarea class="form-control" rows="5" id="comment">{{item.presidente}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Destaque a missão corportativa da Associação de Pacientes:</label>
+            <textarea class="form-control" rows="2" id="comment">{{item.missao}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Dentre as prevalências da Associação de Paciente destaque as três prioritárias:</label>
+            <textarea class="form-control" rows="3" id="comment">{{item.prioritarias}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Indique a ordem prioridade dos público-alvo de relacionamento da Associação de
+              Pacientes:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.publicoAlvo}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Número de Profissionais contratados CLT:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.clt}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Número de voluntários:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.voluntarios}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Tipo de serviço terceirizado e número de funcionários:</label>
+            <textarea class="form-control" rows="4" id="comment">{{item.terceirizados}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A entidade possui conselho científico instituído:</label>
+            <textarea class="form-control" rows="1" id="comment">{{item.conselhoCient}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A Associação ajuda os pacientes na realização de processo de judicialização,
+              Representantes da entidade possuem assento em algum Conselho de Saúde ou qualquer instância pública,
+              A principal liderança da entidade tem clareza sobre o propósito da entidade e seus desafios:</label>
+            <textarea class="form-control" rows="7" id="comment">{{item.quest1}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A principal liderança da entidade demonstra ter conhecimento técnico sobre a causa
+              defendida pela entidade,
+              A principal liderança da entidade demonstra ter relacionamento com diferentes públicos para articular
+              parcerias político-sociais.:</label>
+            <textarea class="form-control" rows="7" id="comment">{{item.quest2}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A principal liderança apresenta um discurso pautado em parcerias e recursos de diferentes fontes (desenvolvimentista):</label>
+            <textarea class="form-control" rows="5" id="comment">{{item.quest3}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A principal liderança defende ideias e projetos com abordagem inovadora com uso de novas tecnologias e formatos,
+              A entidade apresenta projetos estruturados com objetivo, metas e métodologia de implementação claras,
+              A entidade apresenta sistematização, avaliação e consolidação de resultados  estruturados:</label>
+            <textarea class="form-control" rows="7" id="comment">{{item.quest4}}</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">A entidade apresenta discurso pautado em planejamento e gestão de prazos :</label>
+            <textarea class="form-control" rows="2" id="comment">{{item.quest5}}</textarea>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

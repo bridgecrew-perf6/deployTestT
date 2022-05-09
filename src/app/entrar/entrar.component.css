@@ -1,0 +1,8 @@
+#img-bg {
+    background: url("../../assets/yaba.png") no-repeat center;
+    min-height: 695px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
